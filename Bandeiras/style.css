@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background: lightgray url("bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Abril Fatface', cursive;
+}
+h1, h2, h3{
+    text-align: center;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.37);
+}
+h1{
+    font-size: 5rem;
+    margin:35px 0px 35px 0px;
+}
+h2{
+    font-size: 3.5rem;
+    margin:25px 0px 10px 0px;
+    color: white;
+}
+h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a::after{
+    content: '🔗';
+}
+a:hover{
+    color: rgb(219, 219, 219);
+}
+
+.pais{
+    margin: auto;
+    padding: 15px;
+    width: 1080px;
+    min-height: 750px;
+    margin-bottom: 150px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.452);
+}
+
+.bandeira{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Bandeira da Grécia*/
+#mykonos{
+    background: url("mykonos.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#grecia{
+    background-color: rgb(13,94,175);
+}
+
+#quadrado-grecia{
+    background-color: rgb(13,94,175);
+    position: absolute;
+    width: 233px;
+    height: 250px;
+    z-index: 10;
+}
+
+#quadrado-grecia > #vertical-grecia{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: 50px;
+    background-color: white;
+    z-index: 10;
+}
+
+#quadrado-grecia > #horizontal-grecia{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.listra-grecia{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+}
+
+.listra-2-grecia{
+    top: 150px;
+}
+
+.listra-3-grecia{
+    top: 250px;
+}
+
+.listra-4-grecia{
+    top: 350px;
+}
+
+/* Bandeira dos Estados Unidos*/
+#ny{
+    background: url("ny.jpeg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#usa{
+    background-color: rgb(182,3,7);
+}
+
+#retangulo-usa{
+    width: 280px;
+    height: 238px;
+    background-color: rgb(27,21,100);
+    position: absolute;
+    z-index: 5;
+    padding-top: 15px;
+}
+
+.estrela{
+    margin-left: 15px;
+    position: absolute;
+    display: block;
+    color: white;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid white;
+    border-left: 10px solid transparent;
+    transform: rotate(35deg);
+}
+
+.estrela:after{
+    border-bottom: 8.8px solid white;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -6px;
+    left: -7.6px;
+    display: block;
+    transform: rotate(-35deg);
+}
+.estrela:before{
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid white;
+    border-left: 10px solid transparent;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0px;
+    left: -11.5px;
+    width: 0;
+    height: 0;
+    transform: rotate(-70deg);
+}
+
+.estrela-2{
+    margin-left: 60px;
+}
+.estrela-3{
+    margin-left: 105px;
+}
+.estrela-4{
+    margin-left: 150px;
+}
+.estrela-5{
+    margin-left: 190px;
+}
+.estrela-6{
+    margin-left: 240px;
+}
+
+.linha-2{
+    margin-top: 25px;
+}
+.estrela-7{
+    margin-left: 38px;
+}
+.estrela-8{
+    margin-left: 82px;
+}
+.estrela-9{
+    margin-left: 128px;
+}
+.estrela-10{
+    margin-left: 172px;
+}
+.estrela-11{
+    margin-left: 212px;
+}
+
+.linha-3{
+    margin-top: 50px;
+}
+
+.linha-4{
+    margin-top: 75px;
+}
+.linha-5{
+    margin-top: 100px;
+}
+.linha-6{
+    margin-top: 125px;
+}
+.linha-7{
+    margin-top: 150px;
+}
+.linha-8{
+    margin-top: 175px;
+}
+.linha-9{
+    margin-top: 200px;
+}
+
+.listra-usa{
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    width: 100%;
+    height: 34px;
+    background-color: white;
+    z-index: 2;
+}
+
+.listra-2-usa{
+    top: 102px;
+}
+
+.listra-3-usa{
+    top: 170px;
+}
+
+.listra-4-usa{
+    top: 238px;
+}
+
+.listra-5-usa{
+    top: 306px;
+}
+
+.listra-6-usa{
+    top: 374px;
+}
+
+/* Bandeira da Coreia do Sul */
+#seoul{
+    background: url("seoul.jpg") no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+#coreia{
+    background-color: white;
+}
+
+#coreia .yin-yang{
+    background: white;
+	width: 150px;
+	height: 0px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-top: solid 76px rgb(198,12,48);
+	border-bottom: solid 76px rgb(0,52,120);	
+	border-left: 0;
+	border-right: 0;
+	border-radius: 76px;
+}
+
+.yin{
+    background: rgb(198,12,48);
+	width: 76px;
+	height: 76px;
+    position: absolute;
+    margin-top: -38px;
+	border-radius: 40px;
+}
+
+.yang{
+    background: rgb(0,52,120);
+	width: 75px;
+	height: 75px;
+	margin: -38px 0 0 75px;
+	position: absolute;
+	border-radius: 40px;
+}
+
+.fullstrip{
+    background: black;
+	width: 70px;
+	height: 12px;
+	margin-bottom: 8px;
+}
+
+.halfstrip{
+    background: white;
+	width: 70px;
+    border-left: 30px solid black;
+    border-right: 30px solid black;
+	height: 12px;
+	margin-bottom: 8px;
+}
+
+#top-left-container{
+    position: absolute;
+    top: -120px;
+    left: -80px;
+    transform: rotate(-50deg);	
+}
+#top-right-container{
+    position: absolute;
+    top: -120px;
+    right: -80px;
+    transform: rotate(50deg);	
+}
+#bottom-left-container{
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+    transform: rotate(50deg);	
+}
+#bottom-right-container{
+    position: absolute;
+    bottom: -120px;
+    right: -80px;
+    transform: rotate(-50deg);	
+}
+/* Grande Republica de Vanuatu */
+#vanu{
+    background: url("vanu.jpg") no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#vanuatu{
+    background-color: black;
+}
+
+#triangulo{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-left: 350px solid black;
+    border-top: 225px solid transparent;
+    border-bottom: 225px solid transparent;
+}
+
+#cima{
+    position: absolute;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background-color: rgb(210,16,52);
+}
+
+#baixo{
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+    width: 100%;
+    background-color: rgb(0,149,67);
+}
+
+.strip{
+    position: absolute;
+    width: 25px;
+    height: 300px;
+    top: -70px;
+    left: -230px;
+    transform: rotate(57deg);
+    background-color: rgb(253,206,18);
+}
+
+#fechar-baixo{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 152px;
+    left: -350px;
+    border-top: 15.5px solid transparent;
+    border-left: 21px solid rgba(253, 206, 18);
+    border-bottom: 14px solid transparent;
+}
+
+.strip-2{
+    position: absolute;
+    width: 25px;
+    height: 300px;
+    top: -230px;
+    left: -230px;
+    transform: skew(20deg);
+    transform: rotate(-57deg);
+    background-color: rgb(253,206,18);
+}
+
+#fechar-cima{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -181px;
+    left: -350px;
+    border-top: 12.5px solid transparent;
+    border-left: 19px solid rgb(253,206,18);
+    border-bottom: 17px solid transparent;
+}
+
+.strip-3{
+    position: absolute;
+    width: 25px;
+    height: 450px;
+    top: -225px;
+    left: 113px;
+    transform: rotate(90deg);
+    background-color: rgb(253,206,18);
+}
+
+img{
+    width: 15%;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 170px;
+}
+
+/*Brasa*/
+#rio{
+    background: url("ney.jpg") no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.retangulo{
+	background-color: rgb(32, 197, 32);
+	height: 100%;
+	width: 100%;
+}
+
+.losango{
+	position: absolute;
+	left: 50%;
+    bottom: 50%;
+	transform: translateX(-50%);
+
+
+	margin-top: 77.5px;
+
+	width: 0px;
+	border-left: 333.5px solid transparent ;
+	border-right: 333.5px solid transparent;
+	border-bottom: 205.5px solid yellow;
+}
+
+.losango-baixo{
+	position: absolute;
+	left: 50%;
+    bottom: 4.3%;
+	transform: translateX(-50%) rotate(180deg);
+
+	margin-top: 314.7px;
+
+	width: 0px;
+	border-left: 333.5px solid transparent;
+	border-right: 333.5px solid transparent;
+	border-bottom: 205.5px solid yellow;
+}
+
+.circulo{
+	position: absolute;
+	top: 48%;
+	left: 49%;
+	transform: translate(-48%,-48%);
+
+	background-color: blue;
+	width: 310px;
+	height: 310px;
+	border-radius: 50%;
+
+	overflow: hidden;
+}
+
+.faixa{
+	position: absolute;
+	margin-top: 110px;
+	background-color: #fff;
+	width: 500px;
+	height: 40px;
+	
+	
+}
+
+.circle{
+	margin-top: 88px;
+	margin-left: 30px;
+	position: absolute;
+	z-index: 9;
+}
+
+h1 {
+	color: green;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.circulo .estrela{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+}
+
+.circulo .estrela{
+
+	width: 0;
+	height:0;
+	
+	border-left: solid 8px transparent;
+	border-right: solid 8px transparent;
+	border-bottom: solid 5px rgb(255, 255, 255);
+	transform: rotatez(35deg);
+}
+
+
+.circulo .estrela:before{
+	position: absolute;
+	display:block;
+	width: 0;
+	height:0;
+	top: -3.4px;
+    left: -5px;
+	border-left: solid 2px transparent;
+	border-right: solid 2px transparent;
+	border-bottom: solid 5px rgb(255, 255, 255);
+	transform: rotatez(-35deg);
+	content:'';
+}
+
+
+.circulo .estrela:after{
+	position:absolute;
+	display:block;
+	width: 0;
+	height:0;
+	top: -0px;
+	left: -8px;
+
+	
+
+	border-left: solid 8px transparent;
+	border-right: solid 8px transparent;
+	border-bottom: solid 5px white;
+	transform: rotatez(-70deg);
+	content:'';
+}
+
+.estrela.pa{ 
+	margin-left: 30px;
+	margin-top: -70px;
+	transform: scale(1.5,1.5);
+
+}
+
+.estrela.am{
+	margin-left: -130px;
+	margin-top: 5px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.ms{
+	margin-left: -90px;
+	margin-top: 20px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.ro{
+	margin-left: -105px;
+	margin-top: 40px;
+}
+
+.estrela.mt{
+	margin-left: -115px;
+	margin-top: 60px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.rr{
+	margin-left: -90px;
+	margin-top: 80px;
+	transform: scale(1,1);
+}
+
+.estrela.ap{
+	margin-left: -115px;
+	margin-top: 95px;
+	transform: scale(1,1);
+}
+
+.estrela.to{
+	margin-left: -100px;
+	margin-top: 105px;
+	transform: scale(1,1);
+
+}.estrela.go{
+    margin-left: -80px;
+    margin-top: 115px;
+    transform: scale(1,1);
+}
+
+.estrela.ba{
+	margin-left: -10px;
+	margin-top: 33px;
+	transform: scale(1,1);
+}
+
+.estrela.mg{
+	margin-left: -30px;
+	margin-top: 53px;
+	transform: scale(1.,1);
+}
+
+.estrela.es{
+	margin-left: -15px;
+	margin-top: 63px;
+}
+
+.estrela.sp{
+	margin-left: -10px;
+	margin-top: 78px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.rj{
+	margin-left: 10px;
+	margin-top: 50px;
+	transform: scale(1,1);
+}
+
+.estrela.df{
+	margin-left: -10px;
+	margin-top: 125px;
+}
+
+.estrela.pr{
+	margin-left: 28px;
+	margin-top: 118px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.rs{
+	margin-left: 38px;
+	margin-top: 126px;
+	transform: scale(1,1);
+}
+
+.estrela.sc{
+	margin-left: 47px;
+	margin-top: 110px;
+	transform: scale(1,1);
+}
+
+.estrela.se{
+	margin-left: 55px;
+	margin-top: 130px;
+	transform: scale(1,1);
+}
+
+.estrela.al{
+	margin-left: 73px;
+	margin-top: 120px;
+	transform: scale(1,1);
+}
+
+.estrela.pe{
+	margin-left: 70px;
+	margin-top: 100px;
+	transform: scale(1,1);
+}
+
+.estrela.pb{
+	margin-left: 92px;
+	margin-top: 90px;
+	transform: scale(1,1);
+}
+
+.estrela.rn{
+	margin-left: 110px;
+	margin-top: 70px;
+	transform: scale(1,1);
+}
+
+.estrela.ce{
+	margin-left: 130px;
+	margin-top: 50px;
+	transform: scale(1,1);
+}
+
+.estrela.ma{
+	margin-left: 140px;
+	margin-top: 30px;
+	transform: scale(1,1);
+}
+
+.estrela.pi{
+	margin-left: 125px;
+	margin-top: 15px;
+	transform: scale(1.5,1.5);
+}
+
+.estrela.ac{
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
